@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUNTO DE VENTA </title>
+    
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+ 
+</head>
+<body>
+    <div class="header">     
+        <div class="header_izq"> 
+            <div class="header_izq_logo">
+                <img  src="assets/icon.png" class="cl_Imagen_Logo">                 
+             </div>
+             <div class="header_izq_titulo">                 
+                <p id="lbl_Sucursal" class="cl_Titulo">SUCURSAL BOSQUES</p>
+             </div>           
+        </div>    
+
+        <div class="header_centro"> 
+            <div class="header_centro_acciones">
+                <div class="header_centro_acciones_icono">
+                    <img  id="bt_Reportes" src="assets/reportes.png" class="cl_Boton" alt="Reportes" title="Reportes"> 
+                </div>
+                <div class="header_centro_acciones_titulo">
+                    <p id="lbl_Reportes" class="cl_Titulo_boton">Reportes</p>
+                </div>
+            </div>
+            <div class="header_centro_acciones">                 
+                <div class="header_centro_acciones_icono">
+                    <img  id="bt_Cortes" src="assets/cortes.png" class="cl_Boton" alt="Corte de Caja" title="Corte de Caja"> 
+                </div>
+                <div class="header_centro_acciones_titulo">
+                    <p id="lbl_Cortes" class="cl_Titulo_boton">Corte de Caja</p>
+                </div>
+            </div>
+            <div class="header_centro_acciones">                                 
+                <div class="header_centro_acciones_icono">
+                    <img  id="bt_Facturacion" src="assets/facturacion.png" class="cl_Boton" alt="Facturación" title="Facturación"> 
+                </div>
+                <div class="header_centro_acciones_titulo">
+                    <p id="lbl_Facturacion" class="cl_Titulo_boton">Facturación</p>
+                </div>
+
+            </div>
+            <div class="header_centro_acciones">                 
+                <div class="header_centro_acciones_icono">
+                    <img  id="bt_Inventarios" src="assets/inventario.png" class="cl_Boton" alt="Inventarios" title="Inventarios"> 
+                </div>
+                <div class="header_centro_acciones_titulo">
+                    <p id="lbl_Inventarios" class="cl_Titulo_boton">Inventarios</p>
+                </div>
+            </div>
+            <div class="header_centro_acciones">                 
+                <div class="header_centro_acciones_icono">
+                    <img  id="bt_Compras" src="assets/Compra.png" class="cl_Boton" alt="Compras" title="Compras"> 
+                </div>
+                <div class="header_centro_acciones_titulo">
+                    <p id="lbl_Compras" class="cl_Titulo_boton">Compras</p>
+                </div>
+            </div>
+        </div>   
+        <div class="header_der"> 
+            <div class="header_izq_titulo">
+                <p id="lbl_Tiempo" class="cl_Titulo_Presentacion">21/12/2022 03:12:43 PM</p>                 
+            </div>
+            <div class="header_centro_acciones">                 
+                <div class="header_centro_acciones_icono">
+                    <img  id="bt_Perfil" src="assets/user.png" class="cl_Boton" alt="Perfil del usuario" title="Perfil del usuario"> 
+                </div>
+                <div class="header_centro_acciones_titulo">
+                    <p id="lbl_Perfil" class="cl_Titulo_boton">Perfil</p>
+                </div>
+            </div>
+            <div class="header_centro_acciones">                 
+                <div class="header_centro_acciones_icono">
+                    <img  id="bt_Salir" src="assets/logout.png" class="cl_Boton" alt="Salir de la aplicación" title="Salir de la aplicación"> 
+                </div>
+                <div class="header_centro_acciones_titulo">
+                    <p id="lbl_Salir" class="cl_Titulo_boton">Salir</p>
+                </div>
+            </div>    
+        </div>  
+    </div>
+
+
+    <div class="middle">
+        <div class="middle_izq"> 
+            <div class="middle_izq_top"> 
+                <input id="txt_Buscar" type="text" name="buscar"  placeholder="Buscar mercancia por Codigo/Nombre" class="cl_cuadroTexto">
+            </div>
+            <div class="middle_izq_medio"> 
+
+                 <div class="middle_izq_medio_header">
+                    <div class="middle_izq_medio_header_col">                          
+                    </div>
+                    <div class="middle_izq_medio_header_col">
+                        <p id="lbl_No" class="cl_header_Col"> No  </p>
+                    </div>
+                    <div class="middle_izq_medio_header_col_desc">
+                          <p id="lbl_Desc" class="cl_header_Col"> Descripción  </p>
+                    </div>
+                    <div class="middle_izq_medio_header_col">
+                        <p id="lbl_Cantidad" class="cl_header_Col"> Cantidad  </p>
+                    </div>
+                    <div class="middle_izq_medio_header_col">
+                        <p id="lbl_Precio" class="cl_header_Col"> Precio  </p>
+                    </div>
+                
+                 </div>
+
+                 <div class="middle_izq_medio_detalle">
+
+                    <div class="middle_izq_medio_detalle_row">
+                        <div class="middle_izq_medio_detalle_col">
+                            <img id="img_Mercancia_1" src="assets/icon.png" class="cl_Imagen_Mercancia">
+                        </div>
+                        <div class="middle_izq_medio_detalle_col">
+                            <p id="lbl_No_1" class="cl_detalles cl_Contadores"> 1  </p>
+                        </div>
+                        <div class="middle_izq_medio_detalle_col_desc">
+                              <p id="lbl_Desc_1" class="cl_detalles cl_Texto"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. A tenetur iusto sed officia repellat blanditiis ipsam delectus. Commodi doloribus minus magni explicabo. Quasi distinctio similique autem, reprehenderit quidem cupiditate nostrum.  </p>
+                        </div>
+                        <div class="middle_izq_medio_detalle_col_cantidad">
+                            <p id="lbl_Cantidad_1" class="cl_detalles cl_Cantidades"> 1  </p>
+                        </div>
+                        <div class="middle_izq_medio_detalle_col_cantidad">
+                            <p id="lbl_Precio_1" class="cl_detalles cl_Cantidades"> $111111.11  </p>
+                        </div>
+                        <div class="middle_izq_medio_detalle_col">
+                            <img  id='bt_Cancelar_1' src="assets/cancelar.png" class="bt_Accion" title="Cancelar">
+                        </div>
+                    </div>
+
+                    <div class="middle_izq_medio_detalle_row">
+                        <div class="middle_izq_medio_detalle_col">
+                            <img id="img_Mercancia_2" src="assets/icon.png" class="cl_Imagen_Mercancia">
+                        </div>
+                        <div class="middle_izq_medio_detalle_col">
+                            <p id="lbl_No_2" class="cl_detalles cl_Contadores"> 2 </p>
+                        </div>
+                        <div class="middle_izq_medio_detalle_col_desc">
+                              <p id="lbl_Desc_2" class="cl_detalles cl_Texto"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. A tenetur iusto sed officia repellat blanditiis ipsam delectus. Commodi doloribus minus magni explicabo. Quasi distinctio similique autem, reprehenderit quidem cupiditate nostrum.  </p>
+                        </div>
+                        <div class="middle_izq_medio_detalle_col_cantidad">
+                            <p id="lbl_Cantidad_2" class="cl_detalles cl_Cantidades"> 2  </p>
+                        </div>
+                        <div class="middle_izq_medio_detalle_col_cantidad">
+                            <p id="lbl_Precio_2" class="cl_detalles cl_Cantidades"> $222222.22  </p>
+                        </div>
+                        <div class="middle_izq_medio_detalle_col">
+                            <img  id='bt_Cancelar_2' src="assets/cancelar.png" class="bt_Accion" title="Cancelar">
+                        </div>
+                    </div>
+                 </div>
+            </div>
+            <div class="middle_izq_abajo"> 
+                <p id="lbl_Signo" class="cl_Total" > $ </p>
+                <p id="lbl_Total" class="cl_Total" > 999999999999.99 </p>
+            </div>
+        </div>
+        <div class="middle_der"> 
+            <img id="img_Publicidad"  src="assets/publicidad.jpg" class="cl_Imagen_publicidad" alt="Publicidad">
+        </div>        
+    </div>
+
+    <div class="footer">
+        <div class="footer_izq"> 
+            <div class="header_centro_acciones">                 
+                <div class="header_centro_acciones_icono">
+                    <img  id="bt_Recargas" src="assets/recargas.png" class="cl_Boton" alt="Recargas" title="Recargas"> 
+                </div>
+                <div class="header_centro_acciones_titulo">
+                    <p id="lbl_Recargas" class="cl_Titulo_boton">Recargas</p>
+                </div>
+            </div>
+
+            <div class="header_centro_acciones">                 
+                <div class="header_centro_acciones_icono">
+                    <img  id="bt_Servicios" src="assets/servicios.png" class="cl_Boton" alt="Servicios" title="Servicios"> 
+                </div>
+                <div class="header_centro_acciones_titulo">
+                    <p id="lbl_Servicios" class="cl_Titulo_boton">Servicios</p>
+                </div>
+            </div>
+
+            
+            <div class="header_centro_acciones">                 
+                <div class="header_centro_acciones_icono">
+                    <img  id="bt_Promociones" src="assets/promociones.png" class="cl_Boton" alt="Promociones" title="Promociones"> 
+                </div>
+                <div class="header_centro_acciones_titulo">
+                    <p id="lbl_Promociones" class="cl_Titulo_boton">Promociones</p>
+                </div>
+            </div>
+
+                    
+            <div class="header_centro_acciones">                 
+                <div class="header_centro_acciones_icono">
+                    <img  id="bt_Mercancias" src="assets/mercancia.png" class="cl_Boton" alt="Mercancias" title="Mercancias"> 
+                </div>
+                <div class="header_centro_acciones_titulo">
+                    <p id="lbl_Mercancias" class="cl_Titulo_boton">Mercancia</p>
+                </div>
+            </div>
+
+            <div class="header_centro_acciones">                 
+                <div class="header_centro_acciones_icono">
+                    <img  id="bt_Clientes" src="assets/clientes.png" class="cl_Boton" alt="Clientes" title="Clientes"> 
+                </div>
+                <div class="header_centro_acciones_titulo">
+                    <p id="lbl_Clientes" class="cl_Titulo_boton">Clientes</p>
+                </div>
+            </div>
+
+            <div class="header_centro_acciones">                 
+                <div class="header_centro_acciones_icono">
+                    <img  id="bt_Monedero" src="assets/crearmonedero.png" class="cl_Boton" alt="Monedero" title="Monedero"> 
+                </div>
+                <div class="header_centro_acciones_titulo">
+                    <p id="lbl_Monedero" class="cl_Titulo_boton">Monedero</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="footer_der">      
+            <div class="header_centro_acciones">                 
+                <div class="header_centro_acciones_icono">
+                    <img  id="bt_Pagar" src="assets/pagar.png" class="cl_Boton" alt="Pagar" title="Pagar"> 
+                </div>
+                <div class="header_centro_acciones_titulo">
+                    <p id="lbl_Pagar" class="cl_Titulo_boton">Pagar</p>
+                </div>
+            </div>
+            <div class="header_centro_acciones">                 
+                <div class="header_centro_acciones_icono">
+                    <img  id="bt_Devoluciones" src="assets/cancelar.png" class="cl_Boton" alt="Devoluciones" title="Devoluciones"> 
+                </div>
+                <div class="header_centro_acciones_titulo">
+                    <p id="lbl_Devoluciones" class="cl_Titulo_boton">Devoluciones</p>
+                </div>
+            </div>
+            <div class="header_centro_acciones">                 
+                <div class="header_centro_acciones_icono">
+                    <img  id="bt_Limpiar" src="assets/basura.png" class="cl_Boton" alt="Limpiar" title="Limpiar"> 
+                </div>
+                <div class="header_centro_acciones_titulo">
+                    <p id="lbl_Limpiar" class="cl_Titulo_boton">Limpiar</p>
+                </div>
+            </div>
+   
+  
+        </div>
+
+    </div>
+
+ 
+</html>
